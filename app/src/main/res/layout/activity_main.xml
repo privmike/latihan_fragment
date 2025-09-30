@@ -40,13 +40,21 @@
         app:layout_constraintTop_toBottomOf="@id/angka2"/>
 
 
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="21dp"
+        android:id="@+id/fragment_container3"
+        app:layout_constraintTop_toBottomOf="@id/fragment_container"/>
     <androidx.fragment.app.FragmentContainerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:layout_margin="21dp"
         android:id="@+id/fragment_container2"
-        app:layout_constraintTop_toBottomOf="@id/fragment_container"/>
+        app:layout_constraintTop_toBottomOf="@id/fragment_container3"/>
 
 
 

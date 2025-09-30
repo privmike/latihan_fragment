@@ -42,6 +42,7 @@ class MainActivity : AppCompatActivity() {
             fragmenthasil.arguments = datakirim
 
            replaceFragment2(fragmenthasil)
+
         }
 
 

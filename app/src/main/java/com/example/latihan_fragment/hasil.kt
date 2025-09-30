@@ -62,12 +62,13 @@ class hasil : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val texthasil = view.findViewById<TextView>(R.id.textHasil)
+        var tmptext = ""
         val hasiladd = arguments?.let { data ->
             val result =   data.getString("HasilTambah") ?: data.getString("HasilOperasi")
             if (result!=null){
-
+                tmptext = "HASIL : $result"
             }
         }
-        texthasil.text =
+        texthasil.text = tmptext
     }
 }
